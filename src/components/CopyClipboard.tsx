@@ -52,7 +52,7 @@ export default function CopyClipboard({
 
   const copyButton = (
     <TooltipProvider>
-      <Tooltip>
+      <Tooltip open={copied}>
         <TooltipTrigger asChild>
           <Button
             onClick={handleCopy}
@@ -67,9 +67,7 @@ export default function CopyClipboard({
             )}
           </Button>
         </TooltipTrigger>
-        <TooltipContent>
-          {copied ? "Copied!" : "Copy to clipboard"}
-        </TooltipContent>
+        <TooltipContent>{"Copied!"}</TooltipContent>
       </Tooltip>
     </TooltipProvider>
   );
