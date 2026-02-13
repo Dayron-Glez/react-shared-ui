@@ -13,6 +13,7 @@ html, body, #root {
   @apply box-border;
 }
 
+
 :root {
     --sky: hsl(201 80% 52%);
     --purple: hsl(281 45% 51%);
@@ -107,6 +108,12 @@ html, body, #root {
 }
 
 @layer utilities {
+    .bg-dotted {
+        background-color: #ffffff;
+        background-image: radial-gradient(#444cf7cc 0.5px, #ffffff 0.5px);
+        background-size: 10px 10px;
+    }
+
     .text-orange {
         color: var(--color-orange);
     }
